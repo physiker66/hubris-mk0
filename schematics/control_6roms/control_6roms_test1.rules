@@ -1,0 +1,102 @@
+
+(rules PCB control_6roms_test1
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 19347)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.3)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.7)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 300.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 75.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(D1-Pad1)" "Net-(D2-Pad1)" "Net-(D3-Pad1)" "Net-(D4-Pad1)" "Net-(D5-Pad1)" "Net-(D6-Pad1)" "Net-(D7-Pad1)" "Net-(D8-Pad1)"
+    "OUT_HALT" "Net-(D9-Pad1)" "ROM_CARRY_SET" "Net-(D10-Pad1)" "ROM_CARRY_CLEAR" "Net-(D11-Pad1)" "ROM_ALU_WR" "Net-(D12-Pad1)"
+    "ROM_ALU_RD" "Net-(D13-Pad1)" "BUS_WR" "ROM_A_RD" "Net-(D15-Pad1)" "ROM_A_WR" "Net-(D16-Pad1)" "ROM_B_RD"
+    "Net-(D17-Pad1)" "ROM_B_WR" "Net-(D18-Pad1)" "ROM_MEM_RD" "Net-(D19-Pad1)" "ROM_MEM_WR" "Net-(D20-Pad1)" "ROM_IPC_INC"
+    "Net-(D21-Pad1)" "ROM_IPC_HIGH_RD" "Net-(D22-Pad1)" "ROM_IPC_HIGH_WR" "Net-(D23-Pad1)" "ROM_IPC_LOW_RD" "Net-(D24-Pad1)" "ROM_IPC_LOW_WR"
+    "Net-(D25-Pad1)" "ROM_MR_HIGH_RD" "Net-(D26-Pad1)" "ROM_MR_HIGH_WR" "Net-(D27-Pad1)" "ROM_MR_LOW_RD" "Net-(D28-Pad1)" "ROM_MR_LOW_WR"
+    "Net-(D29-Pad1)" "ROM_TR_HIGH_RD" "Net-(D30-Pad1)" "ROM_TR_HIGH_WR" "Net-(D31-Pad1)" "ROM_TR_LOW_RD" "Net-(D32-Pad1)" "ROM_TR_LOW_WR"
+    "Net-(D33-Pad1)" "ROM_OUT_WR" "Net-(D34-Pad1)" "SPARE_1" "Net-(D35-Pad1)" "SPARE_2" "Net-(D36-Pad1)" "SPARE_3"
+    "Net-(D37-Pad1)" "SPARE_4" "Net-(D38-Pad1)" "SPARE_5" "Net-(D39-Pad1)" "SPARE_6" "Net-(D40-Pad1)" "SPARE_7"
+    "Net-(D41-Pad1)" "SPARE_8" "Net-(D42-Pad1)" "SPARE_A" "Net-(D43-Pad1)" "SPARE_B" "Net-(D44-Pad1)" "ROM_SPARE_C"
+    "Net-(D45-Pad1)" "ROM_SPARE_D" "Net-(D46-Pad1)" "Net-(D60-Pad2)" "Net-(D60-Pad1)" "ADR_00" "Net-(D62-Pad1)" "ADR_01"
+    "Net-(D63-Pad1)" "ADR_02" "Net-(D64-Pad1)" "Net-(D65-Pad2)" "Net-(D65-Pad1)" "IN_ZERO" "Net-(D66-Pad1)" "IN_CARRY"
+    "Net-(D67-Pad1)" EQUAL "Net-(D68-Pad1)" "IN_SPARE" "Net-(D69-Pad1)" VCC GND "OUT_TR_HIGH_RD"
+    "OUT_TR_HIGH_WR" "OUT_TR_LOW_RD" "OUT_TR_LOW_WR" "OUT_MR_HIGH_RD" "OUT_MR_HIGH_WR" "OUT_MR_LOW_RD" "OUT_MR_LOW_WR" "OUT_ALU_RD"
+    "OUT_ALU_WR" "OUT_CARRY_SET" "OUT_CARRY_CLEAR" "OUT_IPC_INC" "OUT_IPC_HIGH_RD" "OUT_IPC_HIGH_WR" "OUT_IPC_LOW_RD" "OUT_IPC_LOW_WR"
+    "OUT_A_RD" "OUT_A_WR" "OUT_B_RD" "OUT_B_WR" "OUT_MEM_RD" "OUT_MEM_WR" "OUT_BUS_7" "OUT_BUS_6"
+    "OUT_BUS_5" "OUT_BUS_4" "OUT_BUS_3" "OUT_BUS_2" "OUT_BUS_1" "OUT_BUS_0" "OUT_OUT_WR" "OUT_SPARE_B"
+    "OUT_SPARE_A" "OUT_SPARE_D" "OUT_SPARE_C" "OUT_SPARE_8" "OUT_SPARE_7" "OUT_SPARE_6" "OUT_SPARE_5" "OUT_SPARE_4"
+    "OUT_SPARE_3" "OUT_SPARE_2" "OUT_SPARE_1" CLK RESET "MANUAL_HALT" "ADR_12" "MANUAL_8"
+    "MANUAL_7" "MANUAL_6" "MANUAL_5" "MANUAL_4" "MANUAL_3" "MANUAL_2" "MANUAL_1" "MANUAL_0"
+    "Net-(U1-Pad6)" "Net-(U1-Pad5)" "Net-(U1-Pad10)" "Net-(U1-Pad3)" "Net-(U1-Pad9)" "Net-(U1-Pad2)" "Net-(U1-Pad8)" "END_INSTRUCTION"
+    "Net-(U10-Pad13)" "Net-(U10-Pad6)" "Net-(U10-Pad5)" "Net-(U10-Pad11)" "Net-(U10-Pad10)" "Net-(U10-Pad3)" "Net-(U10-Pad2)" "Net-(U10-Pad8)"
+    "Net-(U11-Pad6)" "Net-(U11-Pad11)" "Net-(U11-Pad3)" "Net-(U11-Pad8)" "Net-(U12-Pad13)" "Net-(U12-Pad12)" "Net-(U12-Pad5)" "Net-(U12-Pad11)"
+    "Net-(U12-Pad3)" "Net-(U12-Pad1)" "Net-(U13-Pad3)" "PROG_WR" "Net-(U20-Pad6)" "Net-(U20-Pad10)" "Net-(U20-Pad8)" "ADR_04"
+    "ADR_06" "ADR_03" "ADR_05" "ADR_08" "ADR_10" "ADR_07" "ADR_09" "ROM_HALT"
+    "ADR_11" "Net-(D47-Pad1)" "Net-(U55-Pad13)" "Net-(U55-Pad12)" "Net-(U55-Pad11)" "Net-(U55-Pad19)" "Net-(U55-Pad18)" "Net-(U55-Pad17)"
+    "Net-(U55-Pad16)" "Net-(U55-Pad15)" "Net-(D14-Pad2)" "Net-(Q1-Pad2)" "Net-(U1-Pad12)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
