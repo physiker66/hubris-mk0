@@ -1,0 +1,143 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# 4Digit_display-rescue_CONN_01X01-conn
+#
+DEF 4Digit_display-rescue_CONN_01X01-conn P 0 40 Y N 1 F N
+F0 "P" 0 100 50 H V C CNN
+F1 "4Digit_display-rescue_CONN_01X01-conn" 100 0 50 V V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+$FPLIST
+ Pin_Header_Straight_1X01
+ Pin_Header_Angled_1X01
+ Socket_Strip_Straight_1X01
+ Socket_Strip_Angled_1X01
+$ENDFPLIST
+DRAW
+S -50 5 10 -5 0 1 0 N
+S -50 50 50 -50 0 1 0 N
+X P1 1 -200 0 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# 4Digit_display-rescue_CONN_01X02-conn
+#
+DEF 4Digit_display-rescue_CONN_01X02-conn P 0 40 Y N 1 F N
+F0 "P" 0 150 50 H V C CNN
+F1 "4Digit_display-rescue_CONN_01X02-conn" 100 0 50 V V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+$FPLIST
+ Pin_Header_Straight_1X02
+ Pin_Header_Angled_1X02
+ Socket_Strip_Straight_1X02
+ Socket_Strip_Angled_1X02
+$ENDFPLIST
+DRAW
+S -50 -45 10 -55 0 1 0 N
+S -50 55 10 45 0 1 0 N
+S -50 100 50 -100 0 1 0 N
+X P1 1 -200 50 150 R 50 50 1 1 P
+X P2 2 -200 -50 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# 4Digit_display-rescue_CONN_01X03-conn
+#
+DEF 4Digit_display-rescue_CONN_01X03-conn P 0 40 Y N 1 F N
+F0 "P" 0 200 50 H V C CNN
+F1 "4Digit_display-rescue_CONN_01X03-conn" 100 0 50 V V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+$FPLIST
+ Pin_Header_Straight_1X03
+ Pin_Header_Angled_1X03
+ Socket_Strip_Straight_1X03
+ Socket_Strip_Angled_1X03
+$ENDFPLIST
+DRAW
+S -50 -95 10 -105 0 1 0 N
+S -50 5 10 -5 0 1 0 N
+S -50 105 10 95 0 1 0 N
+S -50 150 50 -150 0 1 0 N
+X P1 1 -200 100 150 R 50 50 1 1 P
+X P2 2 -200 0 150 R 50 50 1 1 P
+X P3 3 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# 4Digit_display-rescue_DM9368N-DM9368N
+#
+DEF 4Digit_display-rescue_DM9368N-DM9368N S 0 30 Y Y 1 F N
+F0 "S" 950 300 50 H V L CNN
+F1 "4Digit_display-rescue_DM9368N-DM9368N" 950 200 50 H V L CNN
+F2 "DIP787W58P254L1936H508Q16N" 950 100 50 H I L CNN
+F3 "http://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/DM9368.pdf" 950 0 50 H I L CNN
+F4 "7-Segment Decoder/Driver/Latch with Constant Current Source Outputs" 950 -100 50 H I L CNN "Description"
+F5 "5.08" 950 -200 50 H I L CNN "Height"
+F6 "Fairchild Semiconductor" 950 -300 50 H I L CNN "Manufacturer_Name"
+F7 "DM9368N" 950 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "512-DM9368N" 950 -700 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=512-DM9368N" 950 -800 50 H I L CNN "Mouser Price/Stock"
+DRAW
+P 5 0 1 6 200 100 900 100 900 -800 200 -800 200 100 N
+X A1 1 0 0 200 R 50 50 0 0 B
+X D 10 1100 -600 200 L 50 50 0 0 B
+X C 11 1100 -500 200 L 50 50 0 0 B
+X B 12 1100 -400 200 L 50 50 0 0 B
+X A 13 1100 -300 200 L 50 50 0 0 B
+X G 14 1100 -200 200 L 50 50 0 0 B
+X F 15 1100 -100 200 L 50 50 0 0 B
+X VCC 16 1100 0 200 L 50 50 0 0 B
+X A2 2 0 -100 200 R 50 50 0 0 B
+X ~LE 3 0 -200 200 R 50 50 0 0 B
+X ~RBO 4 0 -300 200 R 50 50 0 0 B
+X ~RBI 5 0 -400 200 R 50 50 0 0 B
+X A3 6 0 -500 200 R 50 50 0 0 B
+X A0 7 0 -600 200 R 50 50 0 0 B
+X GND 8 0 -700 200 R 50 50 0 0 B
+X E 9 1100 -700 200 L 50 50 0 0 B
+ENDDRAW
+ENDDEF
+#
+# Display_Character_DC56-11GWA
+#
+DEF Display_Character_DC56-11GWA U 0 20 Y Y 1 F N
+F0 "U" -450 550 50 H V C CNN
+F1 "Display_Character_DC56-11GWA" 475 550 50 H V R CNN
+F2 "Display_7Segment:DA56-11CGKWA" 20 -650 50 H I C CNN
+F3 "" -120 100 50 H I C CNN
+ALIAS DC56-11GWA
+$FPLIST
+ *DA56*11*
+$ENDFPLIST
+DRAW
+T 0 0 340 100 0 0 0 8.8. Normal 0 C C
+T 0 -90 430 25 0 0 0 DIG1 Normal 0 C C
+T 0 50 430 25 0 0 0 DIG2 Normal 0 C C
+T 0 -30 260 25 0 0 0 DP1 Normal 0 C C
+T 0 120 260 25 0 0 0 DP2 Normal 0 C C
+S -500 500 500 -500 0 1 10 f
+X DIG1_E 1 -600 0 100 R 50 50 1 1 I
+X DIG2_B 10 600 300 100 L 50 50 1 1 I
+X DIG2_A 11 600 400 100 L 50 50 1 1 I
+X DIG2_F 12 600 -100 100 L 50 50 1 1 I
+X DIG2_CC 13 600 -400 100 L 50 50 1 1 I
+X DIG1_CC 14 -600 -400 100 R 50 50 1 1 I
+X DIG1_B 15 -600 300 100 R 50 50 1 1 I
+X DIG1_A 16 -600 400 100 R 50 50 1 1 I
+X DIG1_G 17 -600 -200 100 R 50 50 1 1 I
+X DIG1_F 18 -600 -100 100 R 50 50 1 1 I
+X DIG1_D 2 -600 100 100 R 50 50 1 1 I
+X DIG1_C 3 -600 200 100 R 50 50 1 1 I
+X DP1 4 -600 -300 100 R 50 50 1 1 I
+X DIG2_E 5 600 0 100 L 50 50 1 1 I
+X DIG2_D 6 600 100 100 L 50 50 1 1 I
+X DIG2_G 7 600 -200 100 L 50 50 1 1 I
+X DIG2_C 8 600 200 100 L 50 50 1 1 I
+X DP2 9 600 -300 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
