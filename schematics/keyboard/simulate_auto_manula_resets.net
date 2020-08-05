@@ -1,0 +1,18 @@
+* D:\daten\oldcomputers\beneater\schematics\keyboard\simulate_auto_manula_resets.asc
+A1 N001 N002 0 0 0 N003 0 0 OR
+A2 N003 N006 0 0 0 N002 0 0 OR
+V1 N006 0 PULSE(1 0 0 1ns 1ns 1ms 2ms)
+V2 N001 0 PULSE(0 1 0 1ns 1ns 1ms 2ms)
+R1 N005 0 10k
+R2 N005 0 10k
+C1 N004 N003 10n
+C2 N007 N002 10n
+D1 N004 N005 D
+D2 N007 N005 D
+R3 N007 0 10k
+R4 N004 0 10k
+.model D D
+.lib C:\Users\Besitzer\Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 8ms
+.backanno
+.end

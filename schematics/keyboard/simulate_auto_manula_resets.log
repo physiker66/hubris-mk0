@@ -1,0 +1,21 @@
+Circuit: * D:\daten\oldcomputers\beneater\schematics\keyboard\simulate_auto_manula_resets.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Sat May 02 21:59:19 2020
+Total elapsed time: 0.090 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 4192
+traniter = 4180
+tranpoints = 1959
+accept = 1800
+rejected = 159
+matrix size = 9
+fillins = 0
+solver = Normal
+Matrix Compiler1:      16 opcodes  0.2/[0.1]/0.1
+Matrix Compiler2: off  [0.1]/0.1/0.1
+
